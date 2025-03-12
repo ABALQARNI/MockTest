@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>سؤال الاختبار</title>
+  <style>
+    .centered-table {
+      border-collapse: collapse;
+      margin: 20px auto;
+      width: 80%;
+      text-align: center;
+      font-size: 16px;
+    }
+    .centered-table, .centered-table th, .centered-table td {
+      border: 1px solid #000;
+      padding: 8px;
+    }
+    .small-table {
+      width: 40%;
+    }
+    .check-button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .ltr-text {
+      direction: ltr;
+      display: inline-block;
+      margin-left: 5px;
+    }
+    /* لا تغييرات في التصميم أو التنسيق */
+    table.centered-table:not(.small-table) td {
+      width: 50%;
+    }
+    table.centered-table:not(.small-table) td:first-child {
+      text-align: right;
+      direction: rtl;
+      unicode-bidi: embed;
+    }
+    table.centered-table:not(.small-table) td:last-child {
+      text-align: left;
+      direction: ltr;
+      unicode-bidi: embed;
+    }
+  </style>
+  <!-- إضافة MathJax لعرض معادلات LaTeX -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+</head>
+<body>
+
+  <!-- السؤال 1 -->
+  <table class="centered-table">
+    <tr>
+      <td>ما ناتج \( 0.84 + 2.2 + 56.007 \) ؟</td>
+      <td>What is the result of \( 0.84 + 2.2 + 56.007 \)?</td>
+    </tr>
+  </table>
+  <table class="centered-table small-table">
+    <tr>
+      <td>A</td>
+      <td><span class="ltr-text">\( 59.111 \)</span> <input type="radio" name="q1" value="59.111"></td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td><span class="ltr-text">\( 58.047 \)</span> <input type="radio" name="q1" value="58.047"></td>
+      <td>B</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td><span class="ltr-text">\( 59.047 \)</span> <input type="radio" name="q1" value="59.047"></td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td><span class="ltr-text">\( 58.807 \)</span> <input type="radio" name="q1" value="58.807"></td>
+      <td>D</td>
+    </tr>
+  </table>
+
+  <!-- السؤال 2 -->
+  <table class="centered-table">
+    <tr>
+      <td>احسب متوسط الأعداد التالية: \( 96,\, 82,\, 90,\, 82,\, 85 \)</td>
+      <td>Find the average of the following five numbers: \( 96,\, 82,\, 90,\, 82,\, 85 \)</td>
+    </tr>
+  </table>
+  <table class="centered-table small-table">
+    <tr>
+      <td>A</td>
+      <td><span class="ltr-text">\( 85 \)</span> <input type="radio" name="q2" value="85"></td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td><span class="ltr-text">\( 82 \)</span> <input type="radio" name="q2" value="82"></td>
+      <td>B</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td><span class="ltr-text">\( 87 \)</span> <input type="radio" name="q2" value="87"></td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td><span class="ltr-text">\( 90 \)</span> <input type="radio" name="q2" value="90"></td>
+      <td>D</td>
+    </tr>
+  </table>
+
+  <!-- السؤال 3 -->
+  <table class="centered-table">
+    <tr>
+      <td>احسب قيمة \( 7 \tfrac{1}{2} + 5 \tfrac{9}{9} \)</td>
+      <td>Calculate \( 7 \tfrac{1}{2} + 5 \tfrac{9}{9} \)</td>
+    </tr>
+  </table>
+  <table class="centered-table small-table">
+    <tr>
+      <td>A</td>
+      <td><span class="ltr-text">\( 100 \)</span> <input type="radio" name="q3" value="100"></td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td><span class="ltr-text">\( 135 \)</span> <input type="radio" name="q3" value="135"></td>
+      <td>B</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td><span class="ltr-text">\( 27 \)</span> <input type="radio" name="q3" value="27"></td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td><span class="ltr-text">\( 41 \tfrac{2}{3} \)</span> <input type="radio" name="q3" value="41 2/3"></td>
+      <td>D</td>
+    </tr>
+  </table>
+
+  <!-- السؤال 4 -->
+  <table class="centered-table">
+    <tr>
+      <td>تقطع سيارة مسافة \( 438.4 \) ميلاً بخزان وقود ممتلئ. إذا كانت سعة الخزان \( 16 \) غالونًا، فما المسافة (بالأميال) التي تقطعها السيارة لكل غالون؟</td>
+      <td>A car travels \( 438.4 \) miles on a full tank of fuel. How far (in miles) does the car travel with one gallon of fuel if the tank capacity is \( 16 \) gallons?</td>
+    </tr>
+  </table>
+  <table class="centered-table small-table">
+    <tr>
+      <td>A</td>
+      <td><span class="ltr-text">\( 701.44 \)</span> <input type="radio" name="q4" value="701.44"></td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td><span class="ltr-text">\( 27.4 \)</span> <input type="radio" name="q4" value="27.4"></td>
+      <td>B</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td><span class="ltr-text">\( 74.2 \)</span> <input type="radio" name="q4" value="74.2"></td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td><span class="ltr-text">\( 701.4 \)</span> <input type="radio" name="q4" value="701.4"></td>
+      <td>D</td>
+    </tr>
+  </table>
+
+  <!-- السؤال 5 -->
+  <table class="centered-table">
+    <tr>
+      <td>حوِّل \( 55^\circ C \) من مقياس سيلزيوس إلى فهرنهايت باستخدام العلاقة \( F = \frac{9}{5}(C + 32) \)</td>
+      <td>Convert \( 55^\circ C \) from Celsius to Fahrenheit using the formula \( F = \frac{9}{5}(C + 32 \))</td>
+    </tr>
+  </table>
+  <table class="centered-table small-table">
+    <tr>
+      <td>A</td>
+      <td><span class="ltr-text">\( 131^\circ F \)</span> <input type="radio" name="q5" value="131"></td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td><span class="ltr-text">\( 100^\circ F \)</span> <input type="radio" name="q5" value="100"></td>
+      <td>B</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td><span class="ltr-text">\( 168^\circ F \)</span> <input type="radio" name="q5" value="168"></td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td><span class="ltr-text">\( 156.6^\circ F \)</span> <input type="radio" name="q5" value="156.6"></td>
+      <td>D</td>
+    </tr>
+  </table>
+
+  <!-- السؤال 6 -->
+  <table class="centered-table">
+    <tr>
+      <td>ما حل المعادلة \( \log_{2}(5x - 1) = 2 \) ضمن مجموعة الأعداد الحقيقية؟</td>
+      <td>Solve the equation \( \log_{2}(5x - 1) = 2 \) for the set of real numbers.</td>
+    </tr>
+  </table>
+  <table class="centered-table small-table">
+    <tr>
+      <td>A</td>
+      <td><span class="ltr-text">\( x = 1 \)</span> <input type="radio" name="q6" value="1"></td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td><span class="ltr-text">\( x = 2 \)</span> <input type="radio" name="q6" value="2"></td>
+      <td>B</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td><span class="ltr-text">\( x = 4 \)</span> <input type="radio" name="q6" value="4"></td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td><span class="ltr-text">\( x = 3 \)</span> <input type="radio" name="q6" value="3"></td>
+      <td>D</td>
+    </tr>
+  </table>
+
+  <!-- زر التحقق من الإجابات وحساب الدرجة -->
+  <button class="check-button" onclick="checkAllAnswers()">تحقق من الإجابات</button>
+
+  <script>
+    // كائن الإجابات الصحيحة لجميع الأسئلة (1 إلى 6)
+    var answers = {
+      q1: "59.047",
+      q2: "87",
+      q3: "135",
+      q4: "27.4",
+      q5: "131",
+      q6: "1"
+    };
+
+    function checkAllAnswers() {
+      var totalQuestions = 6; // أصبح لدينا 6 أسئلة الآن
+      var score = 0;
+
+      for (var i = 1; i <= totalQuestions; i++) {
+        var qName = "q" + i;
+        var selected = document.querySelector('input[name="' + qName + '"]:checked');
+        if (!selected) {
+          alert("الرجاء الإجابة على جميع الأسئلة قبل التحقق.");
+          return;
+        }
+        if (selected.value === answers[qName]) {
+          score++;
+        }
+      }
+      
+      alert("لقد حصلت على " + score + " من " + totalQuestions);
+    }
+  </script>
+</body>
+</html>
