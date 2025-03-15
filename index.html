@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>اختبار تجريبي - Mock Test</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
+  <style>
+    /* تعريف الخط المخصص */
+    @font-face {
+      font-family: 'ManifaPro';
+      src: url('assets/fonts/ManifaPro2_2.224-Regular.otf') format('opentype');
+      font-weight: normal;
+      font-style: normal;
+    }
+    
+    /* إعادة تعيين الإعدادات الأساسية */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    /* إعدادات الجسم */
+    body {
+      font-family: 'ManifaPro', Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+    
+    /* رأس الصفحة */
+    header {
+      background-color: #fff;
+      padding: 15px 30px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    
+    .header-logo img {
+      max-width: 150px;
+      height: auto;
+    }
+    
+    .header-text {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #333;
+    }
+    
+    /* الحاوية الرئيسية للمحتوى */
+    .main-container {
+      max-width: 800px;
+      margin: 40px auto;
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    
+    .main-container h1 {
+      margin-bottom: 20px;
+      font-size: 2.5em;
+      color: #2c3e50;
+    }
+    
+    .main-container p {
+      margin-bottom: 20px;
+      font-size: 1.2em;
+    }
+    
+    /* زر بدء الان */
+    .start-button {
+      display: inline-block;
+      padding: 12px 24px;
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #fff;
+      background-color: #27ae60;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      margin-top: 20px;
+    }
+    
+    .start-button:hover {
+      background-color: #219150;
+    }
+    
+    /* استجابة للأجهزة الصغيرة */
+    @media (max-width: 600px) {
+      .main-container {
+        margin: 20px 10px;
+        padding: 20px;
+      }
+      
+      .header-text {
+        font-size: 1.2em;
+      }
+      
+      .main-container h1 {
+        font-size: 2em;
+      }
+      
+      .main-container p {
+        font-size: 1em;
+      }
+      
+      .start-button {
+        font-size: 1em;
+        padding: 10px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- رأس الصفحة مع الشعار والنص الجديد -->
+  <header>
+    <div class="header-logo">
+      <img src="assets/images/aramco_logo.png" alt="أرامكو السعودية">
+    </div>
+    <div class="header-text">
+      ENG A.ALQARNI
+    </div>
+  </header>
+  
+  <!-- المحتوى الرئيسي -->
+  <div class="main-container">
+    <h1>اختبار تجريبي - Mock Test</h1>
+    <p>هذا الاختبار هو اختبار تجريبي محاكي صُمّم لمساعدتك على الاستعداد والتدرّب، وليس اختبارًا رسميًا بأي شكل من الأشكال.</p>
+    <p>الهدف منه هو منحك تجربة قريبة من الواقع، ولكن نتائجه ليست معتمدة ولا تُعتبر مؤشرًا رسميًا على مستواك.</p>
+    <p>استخدمه كأداة لتحليل أدائك، تحديد نقاط قوتك، والعمل على تحسين مهاراتك قبل التحدي الحقيقي! 💡✅</p>
+    <p><strong>قسم الرياضيات:</strong> 60 سؤال في 60 دقيقة فقط</p>
+    <p><strong>قسم اللغة الانجليزية:</strong> 60 سؤال في 60 دقيقة فقط</p>
+    <p>أنتبه للمؤقت في أعلى يمين الشاشة</p>
+    <p>حظاً موفقاً !!</p>
+    <a href="math.html" class="start-button">بدء الان</a>
+  </div>
+</body>
+</html>
