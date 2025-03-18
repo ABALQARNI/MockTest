@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mock Test - مساعدة</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/Symbol_Positive_RGB.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="navbar">
+      <div class="brand">
+        <img src="assets/images/SA_logo_inst_Negative_RGB.png" alt="شعار الشركة">
+      </div>
+      <div class="nav-right">
+        <nav>
+          <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="help.html" class="active">مساعدة</a></li>
+            <li><a href="about.html">حول</a></li>
+          </ul>
+        </nav>
+        <a href="#" class="signin">تسجيل الدخول</a>
+      </div>
+    </header>
+    <section class="hero">
+      <h1>تواصل مع المشرف</h1>
+      <a href="https://t.me/eilroit" class="contact-btn" target="_blank">تواصل</a>
+    </section>
+  </div>
+  
+  <script>
+    const currentLocation = location.href;
+    const menuItems = document.querySelectorAll('nav ul li a');
+    menuItems.forEach(item => {
+      if (item.href === currentLocation) {
+        item.classList.add('active');
+      } else {
+        item.classList.remove('active');
+      }
+    });
+  </script>
+</body>
+</html>
