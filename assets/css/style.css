@@ -302,4 +302,22 @@ body {
     overflow-wrap: break-word;
  
 }
+
+.brand img {
+  max-height: 40px;
+}
+
+.question-page table:first-of-type {
+  table-layout: fixed;
+  width: 100%;
+}
+
+.question-page table:first-of-type td {
+  width: 50%;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  vertical-align: top;
+}
+
 }
