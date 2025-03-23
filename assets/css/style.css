@@ -278,4 +278,11 @@ body {
     overflow-wrap: break-word;
     vertical-align: top;
   }
+  .exam-container, #exam-container {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    margin: 40px auto;
+  }
 }
