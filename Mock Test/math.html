@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MATH</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/Symbol_Positive_RGB.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="navbar">
+      <div class="brand">
+        <img src="assets/images/SA_logo_inst_Negative_RGB.png" alt="شعار الشركة">
+      </div>
+      <div class="nav-right">
+        <nav>
+          <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="help.html">مساعدة</a></li>
+            <li><a href="about.html">حول</a></li>
+          </ul>
+        </nav>
+        <a href="#" class="signin">تسجيل الدخول</a>
+      </div>
+    </header>
+    <div id="exam-container" class="exam-container">
+      <div class="timer" id="timer">60:00</div>
+
+      <div class="question-page" id="question1">
+        <table class="centered-table">
+          <tr>
+            <td>What is the result of  \( 0.84 + 2.2 + 56.007 \) ?</td>
+            <td>ما ناتج  \( 0.84 + 2.2 + 56.007 \)  ؟</td>
+          </tr>
+        </table>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\( 59.111 \)</span> <input type="radio" name="q1" value="59.111"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\( 58.047 \)</span> <input type="radio" name="q1" value="58.047"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\( 59.047 \)</span> <input type="radio" name="q1" value="59.047"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\( 58.807 \)</span> <input type="radio" name="q1" value="58.807"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(1)" disabled>السابق</button>
+          <button class="nav-button" onclick="nextQuestion(1)">التالي</button>
+        </div>
+      </div>
+      
+      <div class="question-page" id="question2" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>Find the average of the following five numbers : \( 96,\, 82,\, 90,\, 82,\, 85 \)</td>
+            <td>احسب متوسط الأعداد التالية : \( 96,\, 82,\, 90,\, 82,\, 85 \)</td>
+          </tr>
+        </table>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\( 85 \)</span> <input type="radio" name="q2" value="85"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\( 82 \)</span> <input type="radio" name="q2" value="82"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\( 87 \)</span> <input type="radio" name="q2" value="87"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\( 90 \)</span> <input type="radio" name="q2" value="90"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(2)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(2)">التالي</button>
+        </div>
+      </div>
+      
+      <div class="question-page" id="question3" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>Solve the equation  \( \log_{2}(5x - 1) = 2 \)  for the set of real numbers.</td>
+            <td>ما حل المعادلة  \( \log_{2}(5x - 1) = 2 \)  ضمن مجموعة الأعداد الحقيقية ؟</td>
+          </tr>
+        </table>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\( x = 1 \)</span> <input type="radio" name="q3" value="1"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\( x = 2 \)</span> <input type="radio" name="q3" value="2"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\( x = 4 \)</span> <input type="radio" name="q3" value="4"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\( x = 3 \)</span> <input type="radio" name="q3" value="3"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(3)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(3)">التالي</button>
+        </div>
+      </div>
+      
+      <div class="question-page" id="question4" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>\(7 \dfrac{1}{2} \div 5 \dfrac{5}{9} = ?\)</td>
+            <td>ما ناتج العملية التالية: \( 7 \dfrac{1}{2} \div 5 \dfrac{5}{9} \) ؟</td>
+          </tr>
+        </table>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\( \dfrac{100}{135} \)</span> <input type="radio" name="q4" value="\( \dfrac{100}{135} \)"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\( 1 \dfrac{7}{20} \)</span> <input type="radio" name="q4" value="1 7/20"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\( \dfrac{20}{27} \)</span> <input type="radio" name="q4" value="\( \dfrac{20}{27} \)"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\( 41 \dfrac{2}{3} \)</span> <input type="radio" name="q4" value="41 2/3"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(4)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(4)">التالي</button>
+        </div>
+      </div>
+      
+      <div class="question-page" id="question5" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>A car travels \(438.4\) miles on a full tank of fuel. How far (in miles) does the car travel with one gallon of fuel if the tank capacity is \(16\) gallons?</td>
+            <td>تقطع سيارة مسافة \(438.4\) ميلاً عندما يكون خزان الوقود ممتلئًا تمامًا. ما المسافة (بالميل) التي تقطعها السيارة بمقدار جالون واحد من الوقود إذا كانت سعة الخزان \(16\) جالونًا؟</td>
+          </tr>
+        </table>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\(701.44\)</span> <input type="radio" name="q5" value="701.44"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\(27.4\)</span> <input type="radio" name="q5" value="27.4"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\(74.2\)</span> <input type="radio" name="q5" value="74.2"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\(7014.4\)</span> <input type="radio" name="q5" value="7014.4"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(5)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(5)">التالي</button>
+        </div>
+      </div>
+      
+      <div class="question-page" id="question6" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>Convert \( 55^\circ C \) from Celsius to Fahrenheit using the formula \( F = \frac{9}{5}(C + 32) \)</td>
+            <td>حوِّل \( 55^\circ C \) من مقياس سيلزيوس إلى فهرنهايت باستخدام العلاقة \( F = \frac{9}{5}(C + 32) \)</td>
+          </tr>
+        </table>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\( 131^\circ F \)</span> <input type="radio" name="q6" value="131"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\( 387^\circ F \)</span> <input type="radio" name="q6" value="100"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\( 105.4^\circ F \)</span> <input type="radio" name="q6" value="168"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\(156.6^\circ F \)</span> <input type="radio" name="q6" value="?"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(6)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(6)">التالي</button>
+        </div>
+      </div>
+      
+      <div class="question-page" id="question7" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>Find \(a\) in the triangle below.<br>(Note: Figure is not drawn to scale.)</td>
+            <td>ما قيمة \(a\) في المثلث الموضح أدناه؟<br>(ملاحظة: الشكل غير مطابق لمقياس الرسم)</td>
+          </tr>
+        </table>
+        <div style="text-align:center;">
+          <img src="assets/images/Triangle.png" alt="Triangle" style="max-width:250px;margin-left: -40px;">
+        </div>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\(12\)</span> <input type="radio" name="q7" value="12"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\(8\)</span> <input type="radio" name="q7" value="8"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\(16\)</span> <input type="radio" name="q7" value="16"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\(14\)</span> <input type="radio" name="q7" value="14"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(7)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(7)">التالي</button>
+        </div>
+      </div>
+      
+      <div class="question-page" id="question8" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>What is the volume of a cylinder whose radius is \(5\) \(cm\) and height is \(4\) \(cm\) to the nearest integer? (consider that \(\pi=3.14\))</td>
+            <td>ما حجم الأسطوانة التي نصف قطرها \(5\,cm\) وارتفاعها \(4\,cm\) لأقرب عدد صحيح باعتبار أن \(\pi=3.14\)</td>
+          </tr>
+        </table>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\(314\, cm³\)</span> <input type="radio" name="q8" value="314"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\(63\, cm³\)</span> <input type="radio" name="q8" value="63"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\(126\, cm³\)</span> <input type="radio" name="q8" value="126"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\(1256\, cm³\)</span> <input type="radio" name="q8" value="1256"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(7)">السابق</button>
+          <button class="nav-button" onclick="checkAnswers()">تحقق من الإجابات</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const currentLocation = location.href;
+      const menuItems = document.querySelectorAll('nav ul li a');
+      menuItems.forEach(item => {
+        if (item.href === currentLocation) {
+          item.classList.add('active');
+        } else {
+          item.classList.remove('active');
+        }
+      });
+    });
+    
+    var currentQuestion = 1;
+    var totalQuestions = 8;
+    
+    function showQuestion(n) {
+      for (var i = 1; i <= totalQuestions; i++) {
+        document.getElementById("question" + i).style.display = "none";
+      }
+      document.getElementById("question" + n).style.display = "block";
+      currentQuestion = n;
+    }
+    
+    function nextQuestion(current) {
+      var selected = document.querySelector('input[name="q' + current + '"]:checked');
+      if (!selected) {
+        alert("الرجاء الإجابة على السؤال قبل الانتقال.");
+        return;
+      }
+      if (current < totalQuestions) {
+        showQuestion(current + 1);
+      }
+    }
+    
+    function prevQuestion(current) {
+      if (current > 1) {
+        showQuestion(current - 1);
+      }
+    }
+    
+    function checkAnswers() {
+      var answers = {
+        q1: "59.047",
+        q2: "87",
+        q3: "1",
+        q4: "1 7/20",
+        q5: "27.4",
+        q6: "131",
+        q7: "16",
+        q8: "314"
+      };
+      var score = 0;
+      for (var i = 1; i <= totalQuestions; i++) {
+        var selected = document.querySelector('input[name="q' + i + '"]:checked');
+        if (selected && selected.value === answers["q" + i]) {
+          score++;
+        }
+      }
+      alert("لقد حصلت على " + score + " من " + totalQuestions);
+    }
+    
+    var totalTime = 60 * 60;
+    var timerElement = document.getElementById("timer");
+    var countdownInterval = setInterval(function() {
+      var minutes = Math.floor(totalTime / 60);
+      var seconds = totalTime % 60;
+      seconds = seconds < 10 ? "0" + seconds : seconds;
+      timerElement.textContent = minutes + ":" + seconds;
+      totalTime--;
+      if(totalTime < 0) {
+        clearInterval(countdownInterval);
+        timerElement.textContent = "انتهى الوقت";
+      }
+    }, 1000);
+  </script>
+</body>
+</html>
