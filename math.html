@@ -1,0 +1,2660 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MATH</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/Symbol_Positive_RGB.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="navbar">
+      <div class="brand">
+        <img src="assets/images/SA_logo_inst_Negative_RGB.png" alt="شعار الشركة">
+      </div>
+      <div class="nav-right">
+        <nav>
+          <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="help.html">مساعدة</a></li>
+            <li><a href="about.html">حول</a></li>
+          </ul>
+        </nav>
+        <a href="#" class="signin">تسجيل الدخول</a>
+      </div>
+    </header>
+    <div id="exam-container" class="exam-container">
+      <div class="timer" id="timer">60:00</div>
+
+      <div class="question-page" id="question1">
+        <table class="centered-table">
+          <tr>
+            <td>What is the result of  \( 0.84 + 2.2 + 56.007 \) ?</td>
+            <td>ما ناتج  \( 0.84 + 2.2 + 56.007 \)  ؟</td>
+          </tr>
+        </table>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\( 59.111 \)</span> <input type="radio" name="q1" value="59.111"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\( 58.047 \)</span> <input type="radio" name="q1" value="58.047"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\( 59.047 \)</span> <input type="radio" name="q1" value="59.047"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\( 58.807 \)</span> <input type="radio" name="q1" value="58.807"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(1)" disabled>السابق</button>
+          <button class="nav-button" onclick="nextQuestion(1)">التالي</button>
+        </div>
+      </div>
+      
+      <div class="question-page" id="question2" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>Find the average of the following five numbers : \( 96,\, 82,\, 90,\, 82,\, 85 \)</td>
+            <td>احسب متوسط الأعداد التالية : \( 96,\, 82,\, 90,\, 82,\, 85 \)</td>
+          </tr>
+        </table>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\( 85 \)</span> <input type="radio" name="q2" value="85"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\( 82 \)</span> <input type="radio" name="q2" value="82"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\( 87 \)</span> <input type="radio" name="q2" value="87"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\( 90 \)</span> <input type="radio" name="q2" value="90"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(2)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(2)">التالي</button>
+        </div>
+      </div>
+      
+      <div class="question-page" id="question3" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>Solve the equation  \( \log_{2}(5x - 1) = 2 \)  for the set of real numbers.</td>
+            <td>ما حل المعادلة  \( \log_{2}(5x - 1) = 2 \)  ضمن مجموعة الأعداد الحقيقية ؟</td>
+          </tr>
+        </table>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\( x = 1 \)</span> <input type="radio" name="q3" value="1"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\( x = 2 \)</span> <input type="radio" name="q3" value="2"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\( x = 4 \)</span> <input type="radio" name="q3" value="4"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\( x = 3 \)</span> <input type="radio" name="q3" value="3"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(3)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(3)">التالي</button>
+        </div>
+      </div>
+      
+      <div class="question-page" id="question4" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>\(7 \dfrac{1}{2} \div 5 \dfrac{5}{9} = ?\)</td>
+            <td>ما ناتج العملية التالية: \( 7 \dfrac{1}{2} \div 5 \dfrac{5}{9} \) ؟</td>
+          </tr>
+        </table>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\( \dfrac{100}{135} \)</span> <input type="radio" name="q4" value="\( \dfrac{100}{135} \)"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\( 1 \dfrac{7}{20} \)</span> <input type="radio" name="q4" value="1 7/20"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\( \dfrac{20}{27} \)</span> <input type="radio" name="q4" value="\( \dfrac{20}{27} \)"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\( 41 \dfrac{2}{3} \)</span> <input type="radio" name="q4" value="41 2/3"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(4)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(4)">التالي</button>
+        </div>
+      </div>
+      
+      <div class="question-page" id="question5" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>A car travels \(438.4\) miles on a full tank of fuel. How far (in miles) does the car travel with one gallon of fuel if the tank capacity is \(16\) gallons?</td>
+            <td>تقطع سيارة مسافة \(438.4\) ميلاً عندما يكون خزان الوقود ممتلئًا تمامًا. ما المسافة (بالميل) التي تقطعها السيارة بمقدار جالون واحد من الوقود إذا كانت سعة الخزان \(16\) جالونًا؟</td>
+          </tr>
+        </table>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\(701.44\)</span> <input type="radio" name="q5" value="701.44"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\(27.4\)</span> <input type="radio" name="q5" value="27.4"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\(74.2\)</span> <input type="radio" name="q5" value="74.2"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\(7014.4\)</span> <input type="radio" name="q5" value="7014.4"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(5)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(5)">التالي</button>
+        </div>
+      </div>
+      
+      <div class="question-page" id="question6" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>Convert \( 55^\circ C \) from Celsius to Fahrenheit using the formula \( F = \frac{9}{5}(C + 32) \)</td>
+            <td>حوِّل \( 55^\circ C \) من مقياس سيلزيوس إلى فهرنهايت باستخدام العلاقة \( F = \frac{9}{5}(C + 32) \)</td>
+          </tr>
+        </table>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\( 131^\circ F \)</span> <input type="radio" name="q6" value="131"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\( 387^\circ F \)</span> <input type="radio" name="q6" value="100"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\( 105.4^\circ F \)</span> <input type="radio" name="q6" value="168"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\(156.6^\circ F \)</span> <input type="radio" name="q6" value="?"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(6)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(6)">التالي</button>
+        </div>
+      </div>
+      
+      <div class="question-page" id="question7" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>Find \(a\) in the triangle below.<br>(Note: Figure is not drawn to scale.)</td>
+            <td>ما قيمة \(a\) في المثلث الموضح أدناه؟<br>(ملاحظة: الشكل غير مطابق لمقياس الرسم)</td>
+          </tr>
+        </table>
+        <div style="text-align:center;">
+          <img src="assets/images/Triangle.png" alt="Triangle" style="max-width:250px;margin-left: -40px;">
+        </div>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\(12\)</span> <input type="radio" name="q7" value="12"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\(8\)</span> <input type="radio" name="q7" value="8"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\(16\)</span> <input type="radio" name="q7" value="16"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\(14\)</span> <input type="radio" name="q7" value="14"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(7)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(7)">التالي</button>
+        </div>
+      </div>
+      
+      <div class="question-page" id="question8" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>What is the volume of a cylinder whose radius is \(5\,cm\) and height is \(4\,cm\) to the nearest integer? (consider that \(\pi=3.14\))</td>
+            <td>ما حجم الأسطوانة التي نصف قطرها \(5\,cm\) وارتفاعها \(4\,cm\) لأقرب عدد صحيح باعتبار أن \(\pi=3.14\)</td>
+          </tr>
+        </table>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\(314\, cm³\)</span> <input type="radio" name="q8" value="314"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\(63\, cm³\)</span> <input type="radio" name="q8" value="63"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\(126\, cm³\)</span> <input type="radio" name="q8" value="126"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\(1256\, cm³\)</span> <input type="radio" name="q8" value="1256"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(8)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(8)">التالي</button>
+        </div>
+      </div>
+
+      <div class="question-page" id="question9" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>
+              Evaluate \( (b + 2a)^2 + \frac{c^2 - 6b}{d} \) where<br>
+              \(a=2\)<br>
+              \(b=3\)<br>
+              \(c=12\)<br>
+              \(d=6\)
+            </td>
+            <td>
+              ما قيمة \( (b + 2a)^2 + \frac{c^2 - 6b}{d} \) عندما<br>
+              \(a=2\)<br>
+              \(b=3\)<br>
+              \(c=12\)<br>
+              \(d=6\)
+            </td>
+          </tr>
+        </table>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\(46\)</span> <input type="radio" name="q9" value="46"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\(15\)</span> <input type="radio" name="q9" value="15"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\(70\)</span> <input type="radio" name="q9" value="70"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\(29 \dfrac{1}{6}\)</span> <input type="radio" name="q9" value="29 1/6"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(9)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(9)">التالي</button>
+        </div>
+      </div>
+
+      <div class="question-page" id="question10" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>Solve the equation \( \frac{2x - 3}{4} = \frac{5}{6} \).</td>
+            <td>ما حل المعادلة \( \frac{2x - 3}{4} = \frac{5}{6} \) ؟</td>
+          </tr>
+        </table>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\(1 \dfrac{3}{6}\)</span> <input type="radio" name="q10" value="1 3/6"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\(\dfrac{1}{6}\)</span> <input type="radio" name="q10" value="1/6"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\(18\)</span> <input type="radio" name="q10" value="18"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\(3 \dfrac{1}{2}\)</span> <input type="radio" name="q10" value="3 1/2"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(10)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(10)">التالي</button>
+        </div>
+      </div>
+
+      <div class="question-page" id="question11" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>Find the slope of a line that passes through the points \((-5, 2)\) and \((1, -4)\).</td>
+            <td>ما ميل الخط المستقيم الذي يمر بالنقطتين \((-5, 2)\) و \((1, -4)\)؟</td>
+          </tr>
+        </table>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\(-\dfrac{1}{3}\)</span> <input type="radio" name="q11" value="-1/3"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\(1\)</span> <input type="radio" name="q11" value="1"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\(\dfrac{1}{2}\)</span> <input type="radio" name="q11" value="1/2"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\(-1\)</span> <input type="radio" name="q11" value="-1"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(11)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(11)">التالي</button>
+        </div>
+      </div>
+
+      <div class="question-page" id="question12" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>Solve the inequality \(4x - 9 < 5x + 9\).</td>
+            <td>ما حل المتباينة \(4x - 9 < 5x + 9\) ؟</td>
+          </tr>
+        </table>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\(x > 0\)</span> <input type="radio" name="q12" value="x > 0"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\(x > -18\)</span> <input type="radio" name="q12" value="x > -18"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\(x < 18\)</span> <input type="radio" name="q12" value="x < 18"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\(x < -18\)</span> <input type="radio" name="q12" value="x < -18"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(12)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(12)">التالي</button>
+        </div>
+      </div>
+
+      <div class="question-page" id="question13" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>
+              What is the value of \( y \) in the system of equations
+              <br>
+              \( \begin{cases} 2x - y = 5 \\ 4x - y = 7 \end{cases} \)?
+            </td>
+            <td>
+              ما قيمة \( y \) في نظام المعادلتين
+              <br>
+              \( \begin{cases} 2x - y = 5 \\ 4x - y = 7 \end{cases} \) ؟
+            </td>
+          </tr>
+        </table>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\(y = 3\)</span> <input type="radio" name="q13" value="3"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\(y = -7\)</span> <input type="radio" name="q13" value="-7"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\(y = -3\)</span> <input type="radio" name="q13" value="-3"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\(y = 1\)</span> <input type="radio" name="q13" value="1"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(13)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(13)">التالي</button>
+        </div>
+      </div>
+
+      <div class="question-page" id="question14" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>Two numbers have the sum of \(35\). One of them is \(3\) more than the other. What is the small number?</td>
+            <td>عددان مجموعهما \(35\)، ويزيد العدد الأكبر \(3\) عن العدد الأصغر. ما العدد الأصغر؟</td>
+          </tr>
+        </table>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\(13\)</span> <input type="radio" name="q14" value="13"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\(8 \dfrac{3}{4}\)</span> <input type="radio" name="q14" value="8 3/4"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\(19\)</span> <input type="radio" name="q14" value="19"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\(16\)</span> <input type="radio" name="q14" value="16"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(14)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(14)">التالي</button>
+        </div>
+      </div>
+
+      <div class="question-page" id="question15" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>Simplify \(\bigl(-3x^2y\bigr)^2 \cdot \bigl(2xy^3\bigr)^3\).</td>
+            <td>ما تبسيط \(\bigl(-3x^2y\bigr)^2 \cdot \bigl(2xy^3\bigr)^3\) ؟</td>
+          </tr>
+        </table>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\(72x^7y^{11}\)</span> <input type="radio" name="q15" value="72x^7y^{11}"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\(-72x^7y^{11}\)</span> <input type="radio" name="q15" value="-72x^7y^{11}"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\(108x^7y^8\)</span> <input type="radio" name="q15" value="108x^7y^8"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\(-108x^7y^8\)</span> <input type="radio" name="q15" value="-108x^7y^8"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(15)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(15)">التالي</button>
+        </div>
+      </div>
+
+      <div class="question-page" id="question16" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>In the figure below, what is the value of \(4a - b\)?<br>(Note: Figure is not drawn to scale.)</td>
+            <td>ما قيمة \(4a - b\) اعتمادًا على الشكل المرسوم أدناه؟<br>(ملاحظة: الشكل المرسوم لا يتطابق مع مقياس الرسم)</td>
+          </tr>
+        </table>
+        <div style="text-align:center;">
+          <img src="assets/images/Q16.png" alt="Q16" style="max-width:250px;margin-right: -25px;">
+        </div>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\(54\)</span> <input type="radio" name="q16" value="54"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\(27\)</span> <input type="radio" name="q16" value="27"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\(18\)</span> <input type="radio" name="q16" value="18"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\(45\)</span> <input type="radio" name="q16" value="45"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(16)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(16)">التالي</button>
+        </div>
+      </div>
+
+      <div class="question-page" id="question17" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>Fatima has three apples and four oranges in a box. If she picks one fruit from the box without looking, what is the probability that the fruit is an orange?</td>
+            <td>لدى فاطمة ثلاث تفاحات وأربع برتقالات في صندوق. إذا أخذت ثمرة واحدة من الصندوق دون أن تنظر داخله، ما احتمال أن تكون هذه الثمرة برتقالة؟</td>
+          </tr>
+        </table>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\(\tfrac{1}{7}\)</span> <input type="radio" name="q17" value="1/7"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\(\tfrac{3}{7}\)</span> <input type="radio" name="q17" value="3/7"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\(\tfrac{1}{4}\)</span> <input type="radio" name="q17" value="1/4"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\(\tfrac{4}{7}\)</span> <input type="radio" name="q17" value="4/7"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(17)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(17)">التالي</button>
+        </div>
+      </div>
+
+      <div class="question-page" id="question18" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>If \(m\) and \(n\) are parallel lines, as in the following figure, what is the value of \(v\)?<br>(Note: Figure is not drawn to scale.)</td>
+            <td>إذا كان الخطان المستقيمان \(m\) و\(n\) في الشكل أدناه متوازيين، فما قيمة \(v\)؟<br>(ملاحظة: الشكل المرسوم لا يتطابق مع مقياس الرسم)</td>
+          </tr>
+        </table>
+        <div style="text-align:center;">
+          <img src="assets/images/Q18.png" alt="Q18" style="max-width:250px">
+        </div>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\(53\)</span> <input type="radio" name="q18" value="53"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\(93\)</span> <input type="radio" name="q18" value="93"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\(54\)</span> <input type="radio" name="q18" value="64"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\(73\)</span> <input type="radio" name="q18" value="73"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(18)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(18)">التالي</button>
+        </div>
+      </div>
+
+      <div class="question-page" id="question19" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>What are the roots of the equation \( x^2 - 11x + 30 = 0 \)?</td>
+            <td>ما جذرا المعادلة \( x^2 - 11x + 30 = 0 \) ؟</td>
+          </tr>
+        </table>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\(5\) و \(-6\)</span> <input type="radio" name="q19" value="5 and -6"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\(5\) و \(6\)</span> <input type="radio" name="q19" value="5 and 6"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\(-5\) و \(6\)</span> <input type="radio" name="q19" value="-5 and 6"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\(-5\) و \(-6\)</span> <input type="radio" name="q19" value="-5 and -6"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(19)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(19)">التالي</button>
+        </div>
+      </div>
+
+      <div class="question-page" id="question20" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>What are the quotient and remainder of \( 451 \div 5 \)?</td>
+            <td>ما ناتج القسمة \( 451 \div 5 \) ؟</td>
+          </tr>
+        </table>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">الناتج \(\ 90\) والباقي \(\ 1\)</span> <input type="radio" name="q20" value="الناتج 90 والباقي 1"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">الناتج \(\ 9\) والباقي \(\ 1\)</span> <input type="radio" name="q20" value="الناتج 9 والباقي 1"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">الناتج \(\ 91\) والباقي \(\ 0\)</span> <input type="radio" name="q20" value="الناتج 91 والباقي 0"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">الناتج \(\ 92\) والباقي \(\ 0\)</span> <input type="radio" name="q20" value="الناتج 92 والباقي 0"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(20)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(20)">التالي</button>
+        </div>
+      </div>
+
+      <div class="question-page" id="question21" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>What is the measure of the interior angle that a clock hand makes when moving between any two consecutive numbers?</td>
+            <td>ما قياس الزاوية الداخلية التي يصنعها عقرب الساعة عند التحرك بين أي رقمين متتالين؟</td>
+          </tr>
+        </table>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\(45^\circ\)</span> <input type="radio" name="q21" value="45"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\(15^\circ\)</span> <input type="radio" name="q21" value="15"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\(30^\circ\)</span> <input type="radio" name="q21" value="30"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\(60^\circ\)</span> <input type="radio" name="q21" value="60"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(21)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(21)">التالي</button>
+        </div>
+      </div>
+
+
+      <div class="question-page" id="question22" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>
+              On the number line below, which number would represent the point that is halfway between \(A\) and \(B\)?<br>
+              (Note: Figure is not drawn to scale.)
+            </td>
+            <td>
+              ما العدد الذي يمثل نقطة المنتصف للمسافة بين النقطتين \(A\) و \(B\) على خط الأعداد أدناه؟<br>
+              (ملاحظة: الشكل المرسوم لا يتطابق مع مقياس الرسم)
+            </td>
+          </tr>
+        </table>
+        <div style="text-align:center;">
+          <img src="assets/images/Q22.png" alt="Q22" style="max-width:250px">
+        </div>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\(-2\)</span> <input type="radio" name="q22" value="-2"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\(3\)</span> <input type="radio" name="q22" value="3"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\(0\)</span> <input type="radio" name="q22" value="0"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\(-5\)</span> <input type="radio" name="q22" value="-5"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(22)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(22)">التالي</button>
+        </div>
+      </div>
+
+
+      <div class="question-page" id="question23" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>
+              The first term of a geometric sequence is \(7\), the second term is \(14\), and the last term is \(112\). Calculate the number of terms, \(n\), in the sequence.
+            </td>
+            <td>
+              إذا كان الحد الأول لمتتالية هندسية هو \(7\) والحد الثاني هو \(14\) والحد الأخير هو \(112\)، فما عدد حدودها؟
+            </td>
+          </tr>
+        </table>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\(4\)</span> <input type="radio" name="q23" value="4"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\(5\)</span> <input type="radio" name="q23" value="5"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\(7\)</span> <input type="radio" name="q23" value="7"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\(6\)</span> <input type="radio" name="q23" value="6"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(23)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(23)">التالي</button>
+        </div>
+      </div>
+
+
+
+      <div class="question-page" id="question24" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>
+              The bar graph below shows the average daily production for the top oil producers in 2018. In 2018, how many more barrels are produced by Russia than by Canada?
+            </td>
+            <td>
+              يبين الشكل بالأعمدة معدل الإنتاج اليومي للدول الأكثر إنتاجًا للنفط عام 2018. كم يزيد إنتاج روسيا عن إنتاج كندا؟
+            </td>
+          </tr>
+        </table>
+        <div style="text-align:center;">
+          <img src="assets/images/Q24.png" alt="Q24" style="max-width:250px;margin-left: -40px;">
+        </div>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td>الناتج \(\ 7.8\) مليون برميل/اليوم <input type="radio" name="q24" value="7.8"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td>الناتج \(\ 6.2\) مليون برميل/اليوم <input type="radio" name="q24" value="6.2"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td>الناتج \(\ 12.2\) مليون برميل/اليوم <input type="radio" name="q24" value="12.2"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td>الناتج \(\ 8.8\) مليون برميل/اليوم <input type="radio" name="q24" value="8.8"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(24)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(24)">التالي</button>
+        </div>
+      </div>
+      
+      
+      <div class="question-page" id="question25" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>What is \(10\%\) of \(470\)?</td>
+            <td>ما قيمة \(10\%\) من \(470\)؟</td>
+          </tr>
+        </table>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\(37\)</span> <input type="radio" name="q25" value="37"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\(47\)</span> <input type="radio" name="q25" value="47"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\(423\)</span> <input type="radio" name="q25" value="423"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\(460\)</span> <input type="radio" name="q25" value="460"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(25)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(25)">التالي</button>
+        </div>
+      </div>
+
+
+
+      <div class="question-page" id="question26" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>\(4x + 6 = 18\)<br>Which equation has the same solution as the given equation?</td>
+            <td>\(4x + 6 = 18\)<br>أي معادلة لها نفس حل المعادلة المعطاة؟</td>
+          </tr>
+        </table>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\(4x = 108\)</span> <input type="radio" name="q26" value="4x=108"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\(4x = 24\)</span> <input type="radio" name="q26" value="4x=24"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\(4x = 12\)</span> <input type="radio" name="q26" value="4x=12"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\(4x = 3\)</span> <input type="radio" name="q26" value="4x=3"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(26)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(26)">التالي</button>
+        </div>
+      </div>
+      
+      <div class="question-page" id="question27" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>
+              The total cost, in dollars, to rent a surfboard consists of a \(25\) service fee and a \(10\) per hour rental fee. A person rents a surfboard for \( t\) hours and intends to spend a maximum of \(75\) to rent the surfboard. Which inequality represents this situation?
+            </td>
+            <td>
+              تتكوّن التكلفة الإجمالية (بالدولار) لاستئجار لوح التزلج من تكلفة ثابتة مقدارها \(25\)\$، بالإضافة إلى \(10\)\$ عن كل ساعة استئجار. يستأجر شخص لوح تزلج لمدة \(t\) ساعات ويرغب في ألا يتجاوز إنفاقه \(75\)\$. أي متباينة تمثل هذه الحالة؟            </td>
+          </tr>
+        </table>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\(10t \le 75\)</span> <input type="radio" name="q27" value="10t<=75"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\(10 + 25t \le 75\)</span> <input type="radio" name="q27" value="10+25t<=75"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\(25t \le 75\)</span> <input type="radio" name="q27" value="25t<=75"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\(25 + 10t \le 75\)</span> <input type="radio" name="q27" value="25+10t<=75"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(27)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(27)">التالي</button>
+        </div>
+      </div>
+
+
+
+
+      <div class="question-page" id="question28" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>
+              The function \( g \) is defined by \( g(x) = x^2 + 9 \).<br>
+              For which value of \( x \) is \( g(x) = 25 \)?
+            </td>
+            <td>
+              الدالة \( g \) مُعرفة بـ\( g(x) = x^2 + 9 \).<br>
+              لأي قيمة من \( x \) يكون \( g(x) = 25 \)؟
+            </td>
+          </tr>
+        </table>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\(4\)</span> <input type="radio" name="q28" value="4"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\(5\)</span> <input type="radio" name="q28" value="5"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\(9\)</span> <input type="radio" name="q28" value="9"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\(13\)</span> <input type="radio" name="q28" value="13"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(28)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(28)">التالي</button>
+        </div>
+      </div>
+
+
+
+
+      <div class="question-page" id="question29" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>
+              Each face of a fair \(14\)-sided die is labeled with a number from \(1\) through \(14\), with a different number on each face. If the die is rolled one time, what is the probability of rolling a \(2\)?
+            </td>
+            <td>
+              كل وجه من مكعب النرد ذي \(14\) وجهًا يحمل عددًا من \(1\) إلى \(14\)، بحيث يختلف العدد على كل وجه. إذا تم رمي النرد مرة واحدة، فما احتمال ظهور العدد \(2\)؟
+            </td>
+          </tr>
+        </table>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\(\frac{1}{14}\)</span> <input type="radio" name="q29" value="1/14"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\(\frac{2}{14}\)</span> <input type="radio" name="q29" value="2/14"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\(\frac{12}{14}\)</span> <input type="radio" name="q29" value="12/14"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\(\frac{13}{14}\)</span> <input type="radio" name="q29" value="13/14"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(29)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(29)">التالي</button>
+        </div>
+      </div>
+
+      <div class="question-page" id="question30" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>
+              A printer produces posters at a constant rate of \(42\) posters per minute. 
+              At what rate, in posters per hour, does the printer produce the posters?
+            </td>
+            <td>
+              تنتج آلة الطباعة ملصقات بمعدل ثابت قدره \(42\) ملصقًا في الدقيقة. 
+              ما معدل الإنتاج بالملصقات في الساعة؟
+            </td>
+          </tr>
+        </table>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\(252\)</span> <input type="radio" name="q30" value="252"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\(2520\)</span> <input type="radio" name="q30" value="2520"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\(4200\)</span> <input type="radio" name="q30" value="4200"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\(25200\)</span> <input type="radio" name="q30" value="25200"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(30)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(30)">التالي</button>
+        </div>
+      </div>
+
+      <div class="question-page" id="question31" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>
+              The function \( f \) is defined by the equation \( f(x) = 7x + 2 \). <br>
+              What is the value of \( f(x) \) when \( x = 4 \)?
+            </td>
+            <td>
+              الدالة \( f \) مُعرّفة بالمعادلة \( f(x) = 7x + 2 \). <br>
+              ما قيمة \( f(x) \) عندما \( x = 4 \)؟
+            </td>
+          </tr>
+        </table>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\(10\)</span> <input type="radio" name="q31" value="10"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\(28\)</span> <input type="radio" name="q31" value="28"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\(30\)</span> <input type="radio" name="q31" value="30"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\(34\)</span> <input type="radio" name="q31" value="34"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(31)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(31)">التالي</button>
+        </div>
+      </div>
+
+      <div class="question-page" id="question32" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>
+              A teacher is creating an assignment worth \(70\) points. 
+              The assignment will consist of questions worth \(1\) point and questions worth \(3\) points. 
+              Which equation represents this situation, where \( x \) represents the number of \(1\)-point questions 
+              and \( y \) represents the number of \(3\)-point questions?
+            </td>
+            <td>
+              يُعدّ المعلّم اختبارًا مجموع درجاته \(70\) درجة. 
+              يتكوّن الاختبار من نوعين من الأسئلة: 
+              أسئلة قيمتها درجة واحدة، وأسئلة أخرى قيمتها \(3\) درجات 
+              إذا رمزنا بـ \(x\) لعدد الأسئلة ذات الدرجة الواحدة، وبـ \(y\) لعدد الأسئلة ذات الـ\(3\) درجات، فأيّ معادلة من التالية تُمثّل هذه الحالة؟
+            </td>
+          </tr>
+        </table>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\(4xy = 70\)</span> <input type="radio" name="q32" value="4xy=70"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\(4(x + y) = 70\)</span> <input type="radio" name="q32" value="4(x+y)=70"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\(3x + y = 70\)</span> <input type="radio" name="q32" value="3x+y=70"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\(x + 3y = 70\)</span> <input type="radio" name="q32" value="x+3y=70"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(32)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(32)">التالي</button>
+        </div>
+      </div>
+
+      <div class="question-page" id="question33" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>
+              Right triangles \(LMN\) and \(PQR\) are similar, where \(L\) and \(M\) correspond to \(P\) and \(Q\) respectively. If angle \(M\) measures \(53^\circ\), what is the measure of angle \(Q\)?
+            </td>
+            <td>
+              يوجد مثلثان قائمان الزاوية \(LMN\) و \(PQR\) متشابهان، بحيث تقابل \(L\) و \(M\) كل من \(P\) و \(Q\). إذا كان قياس الزاوية \(M\) يساوي \(53^\circ\)، فما قياس الزاوية \(Q\)؟
+            </td>
+          </tr>
+        </table>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\(37^\circ\)</span> <input type="radio" name="q33" value="37"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\(53^\circ\)</span> <input type="radio" name="q33" value="53"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\(127^\circ\)</span> <input type="radio" name="q33" value="127"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\(143^\circ\)</span> <input type="radio" name="q33" value="143"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(33)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(33)">التالي</button>
+        </div>
+      </div>
+
+      <div class="question-page" id="question34" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <tr>
+              <td>
+                The following system of equations is given:
+                <br>
+                \( \begin{cases} y = -3x \\ 4x + y = 15 \end{cases} \)  
+                <br>
+                If the point \((x, y)\) is a solution to this system, what is the value of \(x\)?
+              </td>
+              <td>
+                نظام المعادلتين التالي يُعطى بـ:
+                <br>
+                \( \begin{cases} y = -3x \\ 4x + y = 15 \end{cases} \)  
+                <br>
+                إذا كانت النقطة \((x, y)\) هي حل هاتين المعادلتين، فما قيمة \(x\)؟
+              </td>
+            </tr>
+            
+        </table>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\(1\)</span> <input type="radio" name="q34" value="1"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\(5\)</span> <input type="radio" name="q34" value="5"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\(15\)</span> <input type="radio" name="q34" value="15"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\(45\)</span> <input type="radio" name="q34" value="45"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(34)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(34)">التالي</button>
+        </div>
+      </div>
+
+      <div class="question-page" id="question35" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>
+              Which of the following equations is the most appropriate linear model for the data shown in the scatterplot?
+            </td>
+            <td>
+              أي من المعادلات التالية تمثل النموذج الخطي الأنسب للبيانات الموضحة في الرسم البياني بالنقاط؟
+            </td>
+          </tr>
+        </table>
+        <div style="text-align:center;">
+          <img src="assets/images/Q35.png" alt="Q35" style="max-width:250px;">
+        </div>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\(\ y = -1.9x - 10.1\)</span> <input type="radio" name="q35" value="y=-1.9x-10.1"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\(\ y = -1.9x + 10.1\)</span> <input type="radio" name="q35" value="y=-1.9x+10.1"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\(\ y = 1.9x - 10.1\)</span> <input type="radio" name="q35" value="y=1.9x-10.1"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\(\ y = 1.9x + 10.1\)</span> <input type="radio" name="q35" value="y=1.9x+10.1"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(35)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(35)">التالي</button>
+        </div>
+      </div>
+
+      <div class="question-page" id="question36" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>
+              The graph of \(y = f(x)\) is shown, where the function \(f\) is defined by 
+              \(f(x) = ax^3 + bx^2 + cx + d\) and \(a, b, c, d\) are constants. <br>
+              For how many values of \(x\) does \(f(x) = 0\)?
+            </td>
+            <td>
+              يوضح الشكل البياني للدالة \(y = f(x)\)، حيث تُعرَّف الدالة 
+              \(f(x) = ax^3 + bx^2 + cx + d\)، مع ثوابت \(a, b, c, d\). <br>
+              كم قيمة لـ\(x\) تجعل \(f(x) = 0\)؟
+            </td>
+          </tr>
+        </table>
+        <div style="text-align:center;">
+          <img src="assets/images/Q36.png" alt="Q36" style="max-width:250px">
+        </div>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">واحد</span> <input type="radio" name="q36" value="واحد"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">اثنان</span> <input type="radio" name="q36" value="اثنان"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">ثلاثة</span> <input type="radio" name="q36" value="ثلاثة"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">أربعة</span> <input type="radio" name="q36" value="أربعة"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(36)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(36)">التالي</button>
+        </div>
+      </div>
+
+      <div class="question-page" id="question37" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>
+              Vivian bought party hats and cupcakes for \(71\)\$. 
+              Each package of party hats cost \(3\)\$, and each cupcake cost \(1\)\$. 
+              If Vivian bought \(10\) packages of party hats, how many cupcakes did she buy?
+            </td>
+            <td>
+              اشترت فيفيان قبعات حفلات وكعكات صغيرة بمبلغ قدره \(71\)\$. 
+              سعر كل علبة من قبعات الحفلات هو \(3\)\$، وسعر كل كعكة صغيرة هو \(1\)\$. 
+              إذا كانت فيفيان قد اشترت \(10\) علب من قبعات الحفلات، فكم كعكة صغيرة اشترت؟
+            </td>
+          </tr>
+        </table>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td> \(25\) كعكة صغيرة <input type="radio" name="q37" value="25"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td> \(31\) كعكة صغيرة <input type="radio" name="q37" value="31"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td> \(41\) كعكة صغيرة <input type="radio" name="q37" value="41"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td> \(52\) كعكة صغيرة <input type="radio" name="q37" value="52"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(37)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(37)">التالي</button>
+        </div>
+      </div>
+
+      <div class="question-page" id="question38" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>
+              One solution to the equation :<br>
+              \( z^2 + 10z - 24 = 0 \)
+            </td>
+            <td>
+              ما أحد الحلول للمعادلة :<br>
+              \( z^2 + 10z - 24 = 0 \)
+            </td>
+          </tr>
+        </table>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\(2\)</span> <input type="radio" name="q38" value="2"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\(-13\)</span> <input type="radio" name="q38" value="-13"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\(4\)</span> <input type="radio" name="q38" value="4"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\(6\)</span> <input type="radio" name="q38" value="6"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(38)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(38)">التالي</button>
+        </div>
+      </div>
+
+      <div class="question-page" id="question39" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>
+              Bacteria are growing in a liquid growth medium. There were \(300,000\) cells per milliliter at the initial observation.<br> 
+              The number of cells per milliliter doubles every \(3\) hours. <br>
+              How many cells per milliliter will there be \(15\) hours after the initial observation?
+            </td>
+            <td>
+              تنمو البكتيريا في وسط سائل مخصص للنمو. كان هناك \(300,000\) خلية في كل مليلتر عند أول ملاحظة.<br>
+              ويتضاعف عدد الخلايا في كل مليلتر كل \(3\) ساعات.<br>
+              فكم سيكون عدد الخلايا في كل مليلتر بعد مرور \(15\) ساعة من الملاحظة الأولى؟
+            </td>
+          </tr>
+        </table>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\(1,500,000\)</span> <input type="radio" name="q39" value="1500000"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\(2,400,000\)</span> <input type="radio" name="q39" value="2400000"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\(4,500,000\)</span> <input type="radio" name="q39" value="4500000"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\(9,600,000\)</span> <input type="radio" name="q39" value="9600000"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(39)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(39)">التالي</button>
+        </div>
+      </div>
+
+      <div class="question-page" id="question40" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>
+              Which expression is equivalent to :<br>
+              \(6x^8y^2 + 12x^2y^2\)
+            </td>
+            <td>
+              أي العبارات التالية تكافئ :<br>
+              \(6x^8y^2 + 12x^2y^2\)
+            </td>
+          </tr>
+        </table>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\(6x^2y^2(2x^6)\)</span> <input type="radio" name="q40" value="6x^2y^2(2x^6)"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\(6x^2y^2(x^4)\)</span> <input type="radio" name="q40" value="6x^2y^2(x^4)"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\(6x^2y^2(x^6 + 2)\)</span> <input type="radio" name="q40" value="6x^2y^2(x^6+2)"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\(6x^2y^2(x^4 + 2)\)</span> <input type="radio" name="q40" value="6x^2y^2(x^4+2)"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(40)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(40)">التالي</button>
+        </div>
+      </div>
+
+      <div class="question-page" id="question41" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>
+              A neighborhood consists of a \(2\)-hectare park and a \(35\)-hectare residential area. <br>
+              The total number of trees in the neighborhood is \(3,934\). <br>
+              The equation \(2x + 35y = 3,934\) represents this situation. <br>
+              Which of the following is the best interpretation of \(x\) in this context?
+            </td>
+            <td>
+              في حي سكني، توجد حديقة مساحتها \(2\) هكتاران، ومنطقة سكنية مساحتها \(35\) هكتارًا. <br>
+              يبلغ إجمالي عدد الأشجار في الحي \(3,934\) شجرة. <br>
+              تمثّل المعادلة \(2x + 35y = 3,934\) هذا الموقف. <br>
+              ما التفسير الأفضل للرمز \(x\) في هذا السياق؟
+            </td>
+          </tr>
+        </table>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td>متوسط عدد الأشجار لكل هكتار في الحديقة <input type="radio" name="q41" value="A"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td>متوسط عدد الأشجار لكل هكتار في المنطقة السكنية <input type="radio" name="q41" value="B"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td>إجمالي عدد الأشجار في الحديقة <input type="radio" name="q41" value="C"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td>إجمالي عدد الأشجار في المنطقة السكنية <input type="radio" name="q41" value="D"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(41)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(41)">التالي</button>
+        </div>
+      </div>
+
+      <div class="question-page" id="question42" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>
+              The graph shows the relationship between the number of shares of stock from Company A, \( x \), and the number of shares from Company B, \( y \), that Simone can purchase. Which equation could represent this relationship?
+            </td>
+            <td>
+              يوضح الرسم البياني العلاقة بين عدد الأسهم التي يمكن لسيمون شراؤها من الشركة A، والذي يُرمز له بـ \( x \)، وعدد الأسهم التي يمكنها شراؤها من الشركة B، والذي يُرمز له بـ \( y \). أي من المعادلات التالية يمكن أن تمثل هذه العلاقة؟
+            </td>
+          </tr>
+        </table>
+        <div style="text-align:center;">
+          <img src="assets/images/Q42.png" alt="Q42" style="max-width:250px">
+        </div>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\(y = 8x + 12\)</span> <input type="radio" name="q42" value="y=8x+12"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\(8x + 12y = 480\)</span> <input type="radio" name="q42" value="8x+12y=480"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\(y = 12x + 8\)</span> <input type="radio" name="q42" value="y=12x+8"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\(12x + 8y = 480\)</span> <input type="radio" name="q42" value="12x+8y=480"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(42)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(42)">التالي</button>
+        </div>
+      </div>
+      
+      <div class="question-page" id="question43" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>
+              Circle \(A\) has a radius of \(3n\), and circle \(B\) has a radius of \(129n\), where \(n\) is a positive constant. <br>
+              The area of circle \(B\) is how many times the area of circle \(A\)?
+            </td>
+            <td>
+              الدائرة \(A\) نصف قطرها يساوي \(3n\)، والدائرة \(B\) نصف قطرها يساوي \(129n\)، حيث \(n\) ثابت موجب. <br>
+              فكم مرة تكون مساحة الدائرة \(B\) أكبر من مساحة الدائرة \(A\)؟
+            </td>
+          </tr>
+        </table>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\(43\)</span> <input type="radio" name="q43" value="43"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\(86\)</span> <input type="radio" name="q43" value="86"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\(129\)</span> <input type="radio" name="q43" value="129"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\(1,849\)</span> <input type="radio" name="q43" value="1849"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(43)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(43)">التالي</button>
+        </div>
+      </div>
+      
+      <div class="question-page" id="question44" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>
+              The frequency table summarizes the \(57\) data values in a data set. <br>
+              What is the maximum data value in the data set?
+            </td>
+            <td>
+              يلخّص جدول التكرار \(57\) قيمة في مجموعة بيانات. <br>
+              ما أكبر قيمة موجودة في هذه المجموعة؟
+            </td>
+          </tr>
+        </table>
+        <div style="text-align:center;">
+          <img src="assets/images/Q44.png" alt="Frequency Table" style="max-width:250px;">
+        </div>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\(12\)</span> <input type="radio" name="q44" value="12"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\(17\)</span> <input type="radio" name="q44" value="17"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\(20\)</span> <input type="radio" name="q44" value="20"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\(14\)</span> <input type="radio" name="q44" value="14"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(44)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(44)">التالي</button>
+        </div>
+      </div>
+
+      <div class="question-page" id="question45" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>
+              A circle in the \(xy\)-plane has a diameter with endpoints \((2, 4)\) and \((2, 14)\). <br>
+              An equation of this circle is \[ (x - 2)^2 + (y - 9)^2 = r^2 \] where \(r\) is a positive constant. <br>
+              What is the value of \(r\)?
+            </td>
+            <td>
+              دائرة في المستوى الإحداثي \(xy\) قُطرها يصل بين النقطتين \((2, 4)\) و \((2, 14)\).<br>
+              معادلة هذه الدائرة هي: \[ (x - 2)^2 + (y - 9)^2 = r^2 \] حيث \(r\) ثابت موجب.<br>
+              ما قيمة \(r\)؟
+            </td>
+          </tr>
+        </table>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\(3\)</span> <input type="radio" name="q45" value="3"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\(5\)</span> <input type="radio" name="q45" value="5"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\(10\)</span> <input type="radio" name="q45" value="10"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\(14\)</span> <input type="radio" name="q45" value="14"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(45)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(45)">التالي</button>
+        </div>
+      </div>
+
+      <div class="question-page" id="question46" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>
+              The measure of angle \(R\) is \(\frac{2\pi}{3}\) radians. <br>
+              The measure of angle \(T\) is \(\frac{5\pi}{12}\) radians greater than the measure of angle \(R\). <br>
+              What is the measure of angle \(T\) in degrees?
+            </td>
+            <td>
+              قياس الزاوية \(R\) هو \(\dfrac{2\pi}{3}\) راديان. <br>
+              وقياس الزاوية \(T\) يزيد عن قياس الزاوية \(R\) بمقدار \(\dfrac{5\pi}{12}\) راديان. <br>
+              فما قياس الزاوية \(T\) بوحدة الدرجات؟
+            </td>
+          </tr>
+        </table>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\(75\)</span> <input type="radio" name="q46" value="75"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\(120\)</span> <input type="radio" name="q46" value="120"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\(195\)</span> <input type="radio" name="q46" value="195"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\(390\)</span> <input type="radio" name="q46" value="390"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(46)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(46)">التالي</button>
+        </div>
+      </div>
+      
+      <div class="question-page" id="question47" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>
+              A certain town has an area of \(4.36\) square miles. What is the area, in square yards, of this town? <br>
+              (\(1\) mile = \(1760\) yards)
+            </td>
+            <td>
+              مدينة ما تبلغ مساحتها \(4.36\) أميال مربعة. 
+              ما مساحة هذه المدينة بالياردات المربعة؟ <br>
+              (مع العلم أن \(1\) ميل = \(1760\) ياردة)
+            </td>
+          </tr>
+        </table>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\(404\)</span> <input type="radio" name="q47" value="404"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\(7,674\)</span> <input type="radio" name="q47" value="7674"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\(710,459\)</span> <input type="radio" name="q47" value="710459"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\(13,505,536\)</span> <input type="radio" name="q47" value="13505536"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(47)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(47)">التالي</button>
+        </div>
+      </div>
+
+      <div class="question-page" id="question48" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>
+              For line \(h\), the table shows three values of \(x\) and their corresponding values of \(y\). <br>
+              Line \(k\) is the result of translating line \(h\) down \(5\) units in the \(xy\)-plane. <br>
+              What is the \(x\)-intercept of line \(k\)?
+            </td>
+            <td>
+              بالنسبة للخط \(h\)، يوضّح الجدول ثلاثة قيم لـ\(x\) والقيم المقابلة لها من \(y\). <br>
+              الخط \(k\) هو نتيجة إزاحة الخط \(h\) إلى الأسفل بمقدار \(5\) وحدات في المستوى \(xy\). <br>
+              ما إحداثي تقاطع الخط \(k\) مع محور \(x\)؟
+            </td>
+          </tr>
+        </table>
+        <div style="text-align:center;">
+          <img src="assets/images/Q48.png" alt="Q48" style="max-width:250px">
+        </div>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\(-\frac{26}{3}, 0\)</span> <input type="radio" name="q48" value="-26/3"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\(-\frac{9}{2}, 0\)</span> <input type="radio" name="q48" value="-9/2"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\(-\frac{11}{3}, 0\)</span> <input type="radio" name="q48" value="-11/3"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\(-\frac{17}{6}, 0\)</span> <input type="radio" name="q48" value="-17/6"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(48)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(48)">التالي</button>
+        </div>
+      </div>
+      
+      <div class="question-page" id="question49" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>
+              In the \(xy\)-plane, the graph of the equation \(y = -x^2 + 9x - 100\) intersects the line \(y = c\) at exactly one point. <br>
+              What is the value of \(c\)?
+            </td>
+            <td>
+              في المستوى \(xy\)، يمثّل الرسم البياني للمعادلة \(y = -x^2 + 9x - 100\) قطعًا مكافئًا. <br>
+              هذا المنحنى يقطع الخط \(y = c\) عند نقطة واحدة فقط. <br>
+              فما قيمة \(c\)؟
+            </td>
+          </tr>
+        </table>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\(-\frac{481}{4}\)</span> <input type="radio" name="q49" value="481/4"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\(-100\)</span> <input type="radio" name="q49" value="-100"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\(-\frac{319}{4}\)</span> <input type="radio" name="q49" value="-319/4"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\(-\frac{9}{2}\)</span> <input type="radio" name="q49" value="9/2"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(49)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(49)">التالي</button>
+        </div>
+      </div>
+      
+      <div class="question-page" id="question50" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>
+              For each real number \( r\), the system <br>
+              \[
+                \begin{cases}
+                2x + 3y = 7 \\
+                10x + 15y = 35
+                \end{cases}
+              \]
+              is satisfied by exactly one of the following points.<br>
+              Which point lies on both lines for every real \(\ r\)?
+            </td>
+            <td>
+              بالنسبة لكل عدد حقيقي \( r\)، ينطبق النظام <br>
+              \[
+                \begin{cases}
+                2x + 3y = 7 \\
+                10x + 15y = 35
+                \end{cases}
+              \]
+              على نقطة واحدة فقط من النقاط الآتية. 
+              أي نقطة من هذه النقاط تقع على كلا الخطين لكل قيمة من \(\ r\)؟
+            </td>
+          </tr>
+        </table>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td>
+              \(\left(\frac{r}{5} + 7,\; -\frac{r}{5} + 35\right)\)
+              <input type="radio" name="q50" value="(r/5+7, -r/5+35)">
+            </td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td>
+              \(\left(-\frac{3r}{2}+\;\frac{7}{2},r\right)\)
+              <input type="radio" name="q50" value="(-3r/2, 7r/2)">
+            </td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td>
+              \(\left(r,\;\frac{2r}{3} + \frac{7}{3}\right)\)
+              <input type="radio" name="q50" value="(r, (2r/3)+(7/3))">
+            </td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td>
+              \(\left(r,\;-\frac{3r}{2} + \frac{7}{2}\right)\)
+              <input type="radio" name="q50" value="(r, -3r/2 + 7/2)">
+            </td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(50)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(50)">التالي</button>
+        </div>
+      </div>
+      <div class="question-page" id="question51" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>
+              Given an equilateral triangle with a perimeter of \(624\) cm, and its height expressed as \(k\sqrt{3}\) cm (where \(k\) is a constant), find the value of \(k\).
+            </td>
+            <td>
+              إذا كان لدينا مثلث متساوي الأضلاع محيطه \(624\) سم، وكان ارتفاعه معبَّرًا عنه بـ\(k\sqrt{3}\) سم (حيث \(k\) ثابت)، فما قيمة \(k\)؟
+            </td>
+          </tr>
+        </table>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\(104\)</span> <input type="radio" name="q51" value="104"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\(156\)</span> <input type="radio" name="q51" value="156"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\(208\)</span> <input type="radio" name="q51" value="208"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\(312\)</span> <input type="radio" name="q51" value="312"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(51)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(51)">التالي</button>
+        </div>
+      </div>
+
+      <div class="question-page" id="question52" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>
+              Tilly earns \(p\) dollars for every \(w\) hours of work. <br>
+               Which expression represents the amount of money, in dollars, Tilly earns for \(39w\) hours of work?
+            </td>
+            <td>
+              إذا كانت تيلي تكسب \(p\) دولارًا مقابل كل \(w\) ساعة من العمل. <br>
+              فأي تعبير مما يلي يمثل مقدار المال (بالدولار) الذي تكسبه تيلي في \(39w\) ساعة من العمل؟
+            </td>
+          </tr>
+        </table>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\(39p\)</span> <input type="radio" name="q52" value="39p"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\(\frac{p}{39}\)</span> <input type="radio" name="q52" value="p/39"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\(p + 39\)</span> <input type="radio" name="q52" value="p+39"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\(p - 39\)</span> <input type="radio" name="q52" value="p-39"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(52)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(52)">التالي</button>
+        </div>
+      </div>
+
+      <div class="question-page" id="question53" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>
+              For a training program, Juan rides his bike at an average rate of \(5.7\) minutes per mile. <br>
+              Which function \(m\) models the number of minutes it will take Juan to ride \(x\) miles at this rate?
+            </td>
+            <td>
+              في برنامج تدريبي، يقود خوان دراجته بمعدل متوسط \(5.7\) دقائق لكل ميل.<br>
+              أي دالة من الدوال الآتية \(m\) تمثل عدد الدقائق التي يحتاجها خوان لقطع مسافة \(x\) ميلاً بهذه السرعة؟
+            </td>
+          </tr>
+        </table>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\(m(x) = \frac{x}{5.7}\)</span> <input type="radio" name="q53" value="x/5.7"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\(m(x) = x + 5.7\)</span> <input type="radio" name="q53" value="x+5.7"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\(m(x) = x - 5.7\)</span> <input type="radio" name="q53" value="x-5.7"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\(m(x) = 5.7x\)</span> <input type="radio" name="q53" value="5.7x"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(53)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(53)">التالي</button>
+        </div>
+      </div>
+
+      <div class="question-page" id="question54" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>
+              The following system of equations is given: <br>
+              \[
+              \begin{cases}
+              3x = 12 \\
+              -3x + y = -6
+              \end{cases}
+              \] <br>
+              If the point \((x,y)\) is a solution to this system, what is the value of \(y\)?
+            </td>
+            <td>
+              نظام المعادلتين التالي يُعطى بـ: <br>
+              \[
+              \begin{cases}
+              3x = 12 \\
+              -3x + y = -6
+              \end{cases}
+              \] <br>
+              إذا كانت النقطة \((x,y)\) حل هذا النظام، فما قيمة \(y\)?
+            </td>
+          </tr>
+        </table>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\(-3\)</span> <input type="radio" name="q54" value="-3"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\(6\)</span> <input type="radio" name="q54" value="6"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\(18\)</span> <input type="radio" name="q54" value="18"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\(30\)</span> <input type="radio" name="q54" value="30"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(54)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(54)">التالي</button>
+        </div>
+      </div>
+
+      <div class="question-page" id="question55" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>
+              \[ s = 40 + 3t\]<br>
+              The equation gives the speed \(s\), in miles per hour, of a certain car \(t\) seconds after it began to accelerate. <br>
+              What is the speed, in miles per hour, of the car \(5\) seconds after it began to accelerate?
+            </td>
+            <td>
+              \[ s = 40 + 3t\]<br>
+              تمثل المعادلة السرعة \(s\) (بالأميال في الساعة) لسيارة معينة بعد \(t\) ثوانٍ من بدء تسارعها. <br>
+              ما السرعة (بالأميال في الساعة) للسيارة بعد \(5\) ثوانٍ من بدء تسارعها؟
+            </td>
+          </tr>
+        </table>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\(40\)</span> <input type="radio" name="q55" value="40"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\(43\)</span> <input type="radio" name="q55" value="43"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\(45\)</span> <input type="radio" name="q55" value="45"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\(55\)</span> <input type="radio" name="q55" value="55"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(55)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(55)">التالي</button>
+        </div>
+      </div>
+
+      <div class="question-page" id="question56" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>
+              For the right triangle shown, \(a = 4\) and \(b = 5\). <br>
+              Which expression represents the value of \(c\)?
+            </td>
+            <td>
+              في المثلث القائم الموضح، إذا كان \(a = 4\) و\(b = 5\). <br>
+              فأي العبارات التالية تمثل قيمة \(c\)؟
+            </td>
+          </tr>
+        </table>
+        <div style="text-align:center;">
+          <img src="assets/images/Q56.png" alt="Q56" style="max-width:250px">
+        </div>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\(4 + 5\)</span> <input type="radio" name="q56" value="4+5"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\(\sqrt{4 \cdot 5}\)</span> <input type="radio" name="q56" value="sqrt(4*5)"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\(\sqrt{4} + 5\)</span> <input type="radio" name="q56" value="sqrt(4)+5"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\(\sqrt{4^2 + 5^2}\)</span> <input type="radio" name="q56" value="sqrt(4^2+5^2)"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(56)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(56)">التالي</button>
+        </div>
+      </div>
+
+      <div class="question-page" id="question57" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>
+              \[4x + 5 = 165\]<br>
+              What is the solution to the given equation?
+            </td>
+            <td>
+              \[4x + 5 = 165\]<br>
+              ما حل المعادلة المعطاة؟
+            </td>
+          </tr>
+        </table>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\(40\)</span> <input type="radio" name="q57" value="40"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\(28\)</span> <input type="radio" name="q57" value="28"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\(45\)</span> <input type="radio" name="q57" value="45"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\(33\)</span> <input type="radio" name="q57" value="33"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(57)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(57)">التالي</button>
+        </div>
+      </div>
+
+      <div class="question-page" id="question58" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>
+              Evaluate \(20 - 5(9 - 4)^2 \div 5\).
+            </td>
+            <td>
+              احسب قيمة التعبير \(20 - 5(9 - 4)^2 \div 5\).
+            </td>
+          </tr>
+        </table>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\(75\)</span> <input type="radio" name="q58" value="75"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\(5\)</span> <input type="radio" name="q58" value="5"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\(-5\)</span> <input type="radio" name="q58" value="-5"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\(-75\)</span> <input type="radio" name="q58" value="-75"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(58)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(58)">التالي</button>
+        </div>
+      </div>
+
+      <div class="question-page" id="question59" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>
+              Simplify \(2(5x - 3y) - 3(3x - 4y)\).
+            </td>
+            <td>
+              بسِّط المقدار \(2(5x - 3y) - 3(3x - 4y)\).
+            </td>
+          </tr>
+        </table>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\(19x - 18y\)</span> <input type="radio" name="q59" value="19x-18y"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\(x - 18y\)</span> <input type="radio" name="q59" value="x-18y"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\(x - 6y\)</span> <input type="radio" name="q59" value="x-6y"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\(x + 6y\)</span> <input type="radio" name="q59" value="x+6y"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(59)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(59)">التالي</button>
+        </div>
+      </div>
+
+      <div class="question-page" id="question60" style="display:none;">
+        <table class="centered-table">
+          <tr>
+            <td>
+              Factor the expression \(5x^2 - 13x + 6\).
+            </td>
+            <td>
+              حلل المقدار التالي إلى عوامله \(5x^2 - 13x + 6\)
+            </td>
+          </tr>
+        </table>
+        <table class="centered-table small-table">
+          <tr>
+            <td>A</td>
+            <td><span class="ltr-text">\((5x+3)(x-2)\)</span> <input type="radio" name="q60" value="(5x+3)(x-2)"></td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><span class="ltr-text">\((5x-3)(x+2)\)</span> <input type="radio" name="q60" value="(5x-3)(x+2)"></td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><span class="ltr-text">\((5x-3)(x-2)\)</span> <input type="radio" name="q60" value="(5x-3)(x-2)"></td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><span class="ltr-text">\((5x+3)(x+2)\)</span> <input type="radio" name="q60" value="(5x+3)(x+2)"></td>
+            <td>D</td>
+          </tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(60)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(60)">التالي</button>
+        </div>
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+    </div>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const currentLocation = location.href;
+      const menuItems = document.querySelectorAll('nav ul li a');
+      menuItems.forEach(item => {
+        if (item.href === currentLocation) {
+          item.classList.add('active');
+        } else {
+          item.classList.remove('active');
+        }
+      });
+
+      var totalQuestions = 60; 
+      var questionBankSize = 60; 
+
+      var order = [];
+      for (var i = 1; i <= questionBankSize; i++) {
+        order.push(i);
+      }
+
+      function shuffle(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+          let j = Math.floor(Math.random() * (i + 1));
+          [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+      }
+      order = shuffle(order);
+
+      var currentQuestionIndex = 0;
+
+      function showQuestion(index) {
+        for (var i = 1; i <= questionBankSize; i++) {
+          var q = document.getElementById("question" + i);
+          if(q) q.style.display = "none";
+        }
+        var questionNumber = order[index];
+        var currentQ = document.getElementById("question" + questionNumber);
+        if(currentQ) currentQ.style.display = "block";
+        currentQuestionIndex = index;
+      }
+
+      window.nextQuestion = function() {
+        var currentQuestionNumber = order[currentQuestionIndex];
+        var selected = document.querySelector('input[name="q' + currentQuestionNumber + '"]:checked');
+        if (!selected) {
+          alert("الرجاء الإجابة على السؤال قبل الانتقال.");
+          return;
+        }
+        if (currentQuestionIndex < totalQuestions - 1) {
+          showQuestion(currentQuestionIndex + 1);
+        } else {
+          checkAnswers();
+        }
+      };
+
+      window.prevQuestion = function() {
+        if (currentQuestionIndex > 0) {
+          showQuestion(currentQuestionIndex - 1);
+        }
+      };
+
+      function checkAnswers() {
+        var answers = {
+          q1: "59.047",
+          q2: "87",
+          q3: "1",
+          q4: "1 7/20",
+          q5: "27.4",
+          q6: "131",
+          q7: "16",
+          q8: "314",
+          q9: "70",
+          q10: "3 1/2",
+          q11: "-1",
+          q12: "x > -18",
+          q13: "-3",
+          q14: "16",
+          q15: "72x^7y^{11}",
+          q16: "27",
+          q17: "4/7",
+          q18: "73",
+          q19: "5 and 6",
+          q20: "الناتج 90 والباقي 1",
+          q21: "30",
+          q22: "-5",
+          q23: "5",
+          q24: "7.8",
+          q25: "47",
+          q26: "4x=12",
+          q27: "25+10t<=75",
+          q28: "4",
+          q29: "1/14",
+          q30: "2520",
+          q31: "30",
+          q32: "x+3y=70",
+          q33: "53",
+          q34: "15",
+          q35: "y=-1.9x+10.1",
+          q36: "ثلاثة",
+          q37: "41",
+          q38: "2",
+          q39: "9600000",
+          q40: "6x^2y^2(x^6+2)",
+          q41: "A",
+          q42: "8x+12y=480",
+          q43: "1849",
+          q44: "14",
+          q45: "5",
+          q46: "195",
+          q47: "13505536",
+          q48: "-17/6",
+          q49: "-319/4",
+          q50: "(-3r/2, 7r/2)",
+          q51: "104",
+          q52: "39p",
+          q53: "5.7x",
+          q54: "6",
+          q55: "55",
+          q56: "sqrt(4^2+5^2)",
+          q57: "40",
+          q58: "-5",
+          q59: "x+6y",
+          q60: "(5x-3)(x-2)"
+        };
+
+        var score = 0;
+        for (var i = 0; i < totalQuestions; i++) {
+          var questionNumber = order[i];
+          var selected = document.querySelector('input[name="q' + questionNumber + '"]:checked');
+          if (selected && selected.value === answers["q" + questionNumber]) {
+            score++;
+          }
+        }
+        alert("لقد حصلت على " + score + " من " + totalQuestions);
+      }
+
+      showQuestion(0);
+
+      var totalTime = 60 * 60;
+      var timerElement = document.getElementById("timer");
+      var countdownInterval = setInterval(function() {
+        var minutes = Math.floor(totalTime / 60);
+        var seconds = totalTime % 60;
+        if (seconds < 10) {
+          seconds = "0" + seconds;
+        }
+        timerElement.textContent = minutes + ":" + seconds;
+        totalTime--;
+        if (totalTime < 0) {
+          clearInterval(countdownInterval);
+          timerElement.textContent = "انتهى الوقت";
+        }
+      }, 1000);
+    });
+  </script>
+</body>
+</html>

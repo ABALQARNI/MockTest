@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ENGLISH</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/Symbol_Positive_RGB.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .question-page{display:none}
+    .question-page.active{display:block}
+  </style>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="navbar">
+      <div class="brand"><img src="assets/images/SA_logo_inst_Negative_RGB.png" alt="شعار الشركة"></div>
+      <div class="nav-right">
+        <nav>
+          <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="help.html">مساعدة</a></li>
+            <li><a href="about.html">حول</a></li>
+          </ul>
+        </nav>
+        <a href="#" class="signin">تسجيل الدخول</a>
+      </div>
+    </header>
+
+    <div id="exam-container" class="exam-container en">
+      <div class="timer" id="timer">60:00</div>
+
+      <div class="question-page active" id="question1">
+        <table class="centered-table"><tr><td>Bilal hasn't read ______ the book to understand the story.</td></tr></table>
+        <table class="centered-table small-table">
+          <tr><td class="option-letter">A</td><td class="option-answer"><input type="radio" name="q1" value="A"><span class="ltr-text">any</span></td></tr>
+          <tr><td class="option-letter">B</td><td class="option-answer"><input type="radio" name="q1" value="B"><span class="ltr-text">as much as</span></td></tr>
+          <tr><td class="option-letter">C</td><td class="option-answer"><input type="radio" name="q1" value="C"><span class="ltr-text">enough of</span></td></tr>
+          <tr><td class="option-letter">D</td><td class="option-answer"><input type="radio" name="q1" value="D"><span class="ltr-text">many of</span></td></tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(1)" disabled>السابق</button>
+          <button class="nav-button" onclick="nextQuestion(1)">التالي</button>
+        </div>
+      </div>
+
+      <div class="question-page" id="question2">
+        <table class="centered-table"><tr><td>Mohammed doesn’t have ______ free time.</td></tr></table>
+        <table class="centered-table small-table">
+          <tr><td class="option-letter">A</td><td class="option-answer"><input type="radio" name="q2" value="A"><span class="ltr-text">much</span></td></tr>
+          <tr><td class="option-letter">B</td><td class="option-answer"><input type="radio" name="q2" value="B"><span class="ltr-text">lots</span></td></tr>
+          <tr><td class="option-letter">C</td><td class="option-answer"><input type="radio" name="q2" value="C"><span class="ltr-text">all</span></td></tr>
+          <tr><td class="option-letter">D</td><td class="option-answer"><input type="radio" name="q2" value="D"><span class="ltr-text">as many as</span></td></tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(2)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(2)">التالي</button>
+        </div>
+      </div>
+
+      <div class="question-page" id="question3">
+        <table class="centered-table"><tr><td>Ibrahim was born ______ Riyadh.</td></tr></table>
+        <table class="centered-table small-table">
+          <tr><td class="option-letter">A</td><td class="option-answer"><input type="radio" name="q3" value="A"><span class="ltr-text">on</span></td></tr>
+          <tr><td class="option-letter">B</td><td class="option-answer"><input type="radio" name="q3" value="B"><span class="ltr-text">by</span></td></tr>
+          <tr><td class="option-letter">C</td><td class="option-answer"><input type="radio" name="q3" value="C"><span class="ltr-text">in</span></td></tr>
+          <tr><td class="option-letter">D</td><td class="option-answer"><input type="radio" name="q3" value="D"><span class="ltr-text">at</span></td></tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(3)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(3)">التالي</button>
+        </div>
+      </div>
+
+      <div class="question-page" id="question4">
+        <table class="centered-table"><tr><td>Jamal likes ______ camping with friends.</td></tr></table>
+        <table class="centered-table small-table">
+          <tr><td class="option-letter">A</td><td class="option-answer"><input type="radio" name="q4" value="A"><span class="ltr-text">gone</span></td></tr>
+          <tr><td class="option-letter">B</td><td class="option-answer"><input type="radio" name="q4" value="B"><span class="ltr-text">to go</span></td></tr>
+          <tr><td class="option-letter">C</td><td class="option-answer"><input type="radio" name="q4" value="C"><span class="ltr-text">go</span></td></tr>
+          <tr><td class="option-letter">D</td><td class="option-answer"><input type="radio" name="q4" value="D"><span class="ltr-text">be going</span></td></tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(4)">السابق</button>
+          <button class="nav-button" onclick="nextQuestion(4)">التالي</button>
+        </div>
+      </div>
+
+      <div class="question-page" id="question5">
+        <table class="centered-table"><tr><td>My brother and I ______ the soccer match on TV last night.</td></tr></table>
+        <table class="centered-table small-table">
+          <tr><td class="option-letter">A</td><td class="option-answer"><input type="radio" name="q5" value="A"><span class="ltr-text">have been watching</span></td></tr>
+          <tr><td class="option-letter">B</td><td class="option-answer"><input type="radio" name="q5" value="B"><span class="ltr-text">watch</span></td></tr>
+          <tr><td class="option-letter">C</td><td class="option-answer"><input type="radio" name="q5" value="C"><span class="ltr-text">are watching</span></td></tr>
+          <tr><td class="option-letter">D</td><td class="option-answer"><input type="radio" name="q5" value="D"><span class="ltr-text">watched</span></td></tr>
+        </table>
+        <div class="nav-buttons">
+          <button class="nav-button" onclick="prevQuestion(5)">السابق</button>
+          <button class="nav-button" onclick="submitExam()">إنهاء</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded',function(){
+      document.querySelectorAll('nav ul li a').forEach(a=>{a.href===location.href?a.classList.add('active'):a.classList.remove('active')});
+      let totalTime=3600,timer=document.getElementById('timer');
+      setInterval(()=>{if(totalTime>=0){let m=Math.floor(totalTime/60),s=(totalTime%60).toString().padStart(2,'0');timer.textContent=m+':'+s;totalTime--;}},1000);
+      const pages=[...document.querySelectorAll('.question-page')];
+      window.nextQuestion=function(i){
+        const current=pages[i-1];
+        if(!current.querySelector('input[type="radio"]:checked')){alert('اختر إجابة أولاً');return;}
+        if(i<pages.length){current.classList.remove('active');pages[i].classList.add('active');}
+      };
+      window.prevQuestion=function(i){
+        if(i>1){pages[i-1].classList.remove('active');pages[i-2].classList.add('active');}
+      };
+    });
+    const answerKey={q1:'C',q2:'A',q3:'C',q4:'B',q5:'D'};
+    window.submitExam=function(){
+      let score=0;
+      for(const[q,ans]of Object.entries(answerKey)){
+        const chosen=document.querySelector('input[name="'+q+'"]:checked');
+        if(chosen&&chosen.value===ans)score++;
+      }
+      alert('درجتك: '+score+' / '+Object.keys(answerKey).length);
+    };
+  </script>
+</body>
+</html>
